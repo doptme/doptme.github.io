@@ -1,0 +1,470 @@
+*{
+    margin: 0;
+    padding: 0;  
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+  }
+  
+  body{
+  
+      text-align: center;
+      font-family: "Arimo", sans-serif;
+      overflow-x: hidden;
+  }
+  
+  .head{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 63px;
+      background-color: #3586ff;
+      position: fixed;
+      width: 100%;
+      z-index: 1000;
+  }
+  
+  .navbar{
+      display: flex;
+      margin-right: 20px;
+  }
+  
+  .logo{
+      margin-left: 10px;
+      width: 65px;
+      height: auto;
+  }
+  
+  .logo  img{
+    margin: 100%;
+    height: auto;
+    width: 50px;
+  }
+  .logo-inicio{
+      text-decoration: none;
+      background: none;
+      text-transform: uppercase;
+      font-size: 20px;
+  }
+  
+  .navbar a {
+      display: block;
+      padding: 20px 20px;
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 20px;
+  }
+  
+  .navbar a:hover {    
+      background: rgb(24, 69, 105);
+  
+  }
+  
+  .header{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .header{
+      height: 70vh !important;
+      background: url(img/perro-.jpg) no-repeat center;
+      background-size: cover;
+      margin-bottom: 5%;
+  }
+  
+  .tittle{
+      margin-bottom: 40px;
+      font-size: 60px;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: #fff;
+      
+  }
+  
+  .producto{
+      background: #3586ff;
+      padding: 20px; /* Espacio alrededor del texto dentro del cuadrado */
+      margin: 70px ;
+  }
+  
+  p{
+      margin-bottom: 40px;
+      font-size: 18px;
+      color: #fff;
+  }
+  
+  .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 40px;
+      border: 2px solid #000;
+      color: #fff;
+      text-decoration: none;
+      background: #000;
+  }
+  
+  .btn:hover{
+      background: none;
+  }
+  
+  .btn-home{
+      display: flex;
+  }
+  
+  .btn-home a{
+      margin: 0 10px;
+  }
+  
+  .content{
+      height: 50vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .Carucel{
+      background: #FFDE59; 
+  }
+  
+  .content-all{
+    width: 240px;
+    margin: auto;
+    perspective: 1000px;
+    position: relative;
+    margin-top: 50px;
+    height: 15vh;
+  }
+  
+  .content-carrousel{
+    width: 100%;
+    position: absolute;
+    animation: rotar 10s infinite linear;
+    transform-style: preserve-3d;
+  }
+  
+  .content-carrousel:hover{
+    animation-play-state: paused;
+    cursor: pointer;
+  }
+  
+  .content-carrousel figure{
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    position: absolute;
+    box-shadow: 0px 0px 20px 0px #000;
+   transition: all 300ms; 
+  }
+  
+  .content-carrousel figure:hover{
+    box-shadow: 0px 0px 0px 0px #000;
+    transition: all 300ms;
+  }
+  
+  
+  
+  .content-carrousel figure:nth-child(1){
+    transform: rotateY(0deg) translateZ(300px);
+  }
+  .content-carrousel figure:nth-child(2){
+    transform: rotateY(45deg) translateZ(300px);
+  }
+  .content-carrousel figure:nth-child(3){
+    transform: rotateY(90deg) translateZ(300px);
+  }
+  .content-carrousel figure:nth-child(4){
+    transform: rotateY(135deg) translateZ(300px);
+  }
+  .content-carrousel figure:nth-child(5){
+    transform: rotateY(180deg) translateZ(300px);
+  }
+  .content-carrousel figure:nth-child(6){
+    transform: rotateY(225deg) translateZ(300px);
+  }
+  .content-carrousel figure:nth-child(7){
+    transform: rotateY(270deg) translateZ(300px);
+  }
+  .content-carrousel figure:nth-child(8){
+    transform: rotateY(315deg) translateZ(300px);
+  }
+  .content-carrousel figure:nth-child(9){
+    transform: rotateY(360deg) translateZ(300px);
+  }
+  
+  .content-carrousel img{
+    width: 100%;
+  }
+  
+  .content-carrousel img:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
+  }
+  
+  @keyframes rotar{
+    from{
+      transform: rotateY(0deg);
+    }
+    to{
+      transform: rotateY(360deg);
+    }
+  }
+  
+  
+  .tarjeta {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    overflow: hidden;
+  }
+  
+  .tarjeta-imagen {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .tarjeta-contenido {
+    padding: 20px;
+  }
+  
+  .tarjeta-titulo {
+    margin-top: 0;
+  }
+  
+  .tarjeta-texto {
+    color: #666;
+  }
+  
+  .boton {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  .boton:hover {
+    background-color: #0056b3;
+  }
+  
+  body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #FFDE59;
+    }
+    
+    
+    .boton {
+      display: inline-block;
+      padding: 8px 16px;
+      background-color: #007bff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      margin-top: 10px;
+      transition: background-color 0.3s;
+    }
+    
+    .boton:hover {
+      background-color: #0056b3;
+    }
+    
+    @media screen and (max-width: 768px) {
+      .tarjeta {
+        width: calc(50% - 20px);
+      }
+    }
+    
+    @media screen and (max-width: 480px) {
+      .tarjeta {
+        width: calc(100% - 20px);
+      }
+    }
+  
+  
+    .card-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      height: 50vh;
+    }
+    
+    .card {
+      width: 300px;
+      height: 300px; /* Ajusta la altura según tus necesidades */
+      background-color: #f0f0f0;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s;
+      overflow: hidden;
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .card:hover {
+      transform: scale(1.1);
+    }
+    
+    .card img {
+      width: 100%;
+      height: auto;
+    }
+    
+    .card-content {
+      padding: 20px;
+      flex-grow: 1;
+    }
+    
+    .card h2 {
+      margin-top: 0;
+    }
+    
+    .card p {
+      margin-bottom: 0;
+    }
+  
+    footer{
+      position: relative;
+      width: 100%;
+      background: #3586ff;
+      min-height: 100px;
+      padding: 20px 50px;
+      align-items: center;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  
+    footer .social_icon,
+    footer .menu{
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 10px 0;
+      flex-wrap: wrap;
+    }
+  
+    footer .social_icon li,
+    footer .menu li{
+      list-style: none;
+    }
+  
+    footer .social_icon li a{
+      font-size: 2em;
+      color: #fff;
+      margin: 0 10px;
+      display: inline-block;
+      transition: 0.5%;
+    }
+  
+    footer .social_icon li a:hover{
+      transform: translateY(-10px)
+    }
+  
+    footer .menu li a{
+      font-size: 1.2em;
+      color: #fff;
+      margin: 0 10px;
+      display: inline-block;
+      transition: 0.5%;
+      text-decoration: none;
+      opacity: 0.75;
+    }
+  
+    footer .menu li a:hover{
+      opacity: 1;
+    }
+  
+    footer p{
+      color: #fff;
+      text-align: center;
+      margin-top: 15px;
+      margin-bottom: 10px;
+      font-size: 1.1em;
+    }
+  
+    footer .wave{
+      position: absolute;
+      top: -100px;
+      left: 0;
+      width: 100%;
+      height: 100px;
+      background: url(img/wave.png);
+      background-size: 1000px 100px;
+    }
+  
+    footer .wave#wave1{
+      z-index: 1000;
+      opacity: 1;
+      bottom: 0;
+      animation: animateWave 4s linear infinite;
+    }
+  
+    footer .wave#wave2{
+      z-index: 999;
+      opacity: 0.5;
+      bottom: 10px;
+      animation: animateWave_02 4s linear infinite;
+    }
+  
+    
+    footer .wave#wave3{
+      z-index: 1000;
+      opacity: 0.2;
+      bottom: 15px;
+      animation: animateWave_03 3s linear infinite;
+    }
+  
+    footer .wave#wave4{
+      z-index: 999;
+      opacity: 0.7;
+      bottom: 20px;
+      animation: animateWave_04 3s linear infinite;
+    }
+  
+    @keyframes animateWave{
+      0%{
+        background-position-x: 1000PX;
+      }
+      100%{
+        background-position-x: 0px;
+      }
+    }
+  
+    @keyframes animateWave_02{
+      0%{
+        background-position-x: 0PX;
+      }
+      100%{
+        background-position-x: 1000px;
+      }
+    }
+
+    .wanted {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background-color: red;
+      color: white;
+      padding: 5px;
+      border-radius: 5px;
+    }
+  
+  
+  .card-content{
+    position: relative;
+  }
+
+  .card p {
+    margin-bottom: 0;
+    color: #000;
+  }
